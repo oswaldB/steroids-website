@@ -1,0 +1,58 @@
+'use client'
+
+interface PricingCardProps {
+  name: string
+  price: string
+  period: string
+  description: string
+  features: string[]
+  cta: string
+  highlight?: boolean
+}
+
+export function PricingCard({
+  name,
+  price,
+  period,
+  description,
+  features,
+  cta,
+  highlight,
+}: PricingCardProps) {
+  return (
+    <div
+      className={`rounded-lg border p-8 transition-all ${
+        highlight
+          ? 'border-[#CEEF2C] bg-[#CEEF2C]/5 scale-105 shadow-2xl shadow-[#CEEF2C]/20'
+          : 'border-slate-700 bg-slate-900/50 hover:border-[#CEEF2C]/50'
+      }`}
+    >
+      <h3 className="text-2xl font-bold text-white mb-2">{name}</h3>
+      <p className="text-[#D8F847] text-sm mb-4">{description}</p>
+
+      <div className="mb-6">
+        <span className="text-4xl font-bold text-white">{price}</span>
+        <span className="text-slate-400 ml-2">{period}</span>
+      </div>
+
+      <ul className="space-y-3 mb-8">
+        {features.map((feature, idx) => (
+          <li key={idx} className="flex items-start gap-3">
+            <span className="text-[#CEEF2C] font-bold mt-0.5">✓</span>
+            <span className="text-slate-300">{feature}</span>
+          </li>
+        ))}
+      </ul>
+
+      <button
+        className={`w-full font-semibold px-6 py-3 rounded transition-all ${
+          highlight
+            ? 'bg-[#CEEF2C] text-[#0A0E27] hover:shadow-lg hover:shadow-[#CEEF2C]/30'
+            : 'border border-[#CEEF2C] text-[#CEEF2C] hover:bg-[#CEEF2C]/10'
+        }`}
+      >
+        {cta}
+      </button>
+    </div>
+  )
+}
