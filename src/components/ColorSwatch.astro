@@ -1,0 +1,22 @@
+---
+interface Props {
+  name: string
+  code: string
+  hex: string
+  description: string
+}
+
+const { name, code, hex, description } = Astro.props
+---
+
+<div class="overflow-hidden rounded-lg shadow-lg">
+  <div
+    class="h-32 w-full flex items-center justify-center"
+    style={`background-color: ${hex}`}
+  ></div>
+  <div class="bg-slate-700 p-4">
+    <div class="font-semibold text-white">{name}</div>
+    <div class="font-mono text-sm text-slate-300">{code}</div>
+    <div class="text-xs text-slate-400 mt-2">{description}</div>
+  </div>
+</div>

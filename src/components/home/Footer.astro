@@ -1,0 +1,69 @@
+---
+const columns = [
+  {
+    heading: 'Entreprise',
+    links: ['À propos', 'Leadership', 'Valeurs', 'Localités'],
+  },
+  {
+    heading: 'Expertise',
+    links: ['Industries', 'Capacités', 'Tech & IA', 'Études de cas'],
+  },
+  {
+    heading: 'Ressources',
+    links: ['Analyses', 'Blog'],
+  },
+  {
+    heading: 'Connecter',
+    links: ['Carrières', 'Contact', 'LinkedIn'],
+  },
+]
+---
+
+<footer class="bg-[#060920] px-6 py-16 lg:px-12 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+      {columns.map((col) => (
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-widest mb-4">
+            {col.heading}
+          </h4>
+          <ul class="space-y-2.5">
+            {col.links.map((link) => (
+              <li>
+                {link === 'Contact' ? (
+                  <a href="/contact" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'LinkedIn' ? (
+                  <a href="https://www.linkedin.com/company/steroids-studio" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Analyses' || link === 'Blog' ? (
+                  <a href="/insights" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'À propos' ? (
+                  <a href="/a-propos" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Leadership' ? (
+                  <a href="/a-propos#leadership" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Valeurs' ? (
+                  <a href="/a-propos#valeurs" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : (
+                  <a href="#" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-800 pt-8">
+      <div class="flex items-center gap-3">
+        <div class="w-6 h-6 rounded bg-[#CEEF2C] flex items-center justify-center">
+          <span class="text-xs font-black text-black leading-none">S</span>
+        </div>
+        <span class="text-sm text-slate-500">
+          Steroids Stratégie & Transformation
+        </span>
+      </div>
+      <p class="text-xs text-slate-600">
+        2026 Steroids. Tous droits réservés.
+      </p>
+    </div>
+  </div>
+</footer>

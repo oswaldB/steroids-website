@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { WaveBackground } from '../components/WaveBackground'
+import { Navbar } from '../components/home/Navbar'
+import Hero from '../components/home/Hero.astro'
+import FeaturedInsights from '../components/home/FeaturedInsights.astro'
+import HowWeHelp from '../components/home/HowWeHelp.astro'
+import Careers from '../components/home/Careers.astro'
+import SocietalImpact from '../components/home/SocietalImpact.astro'
+import { Newsletter } from '../components/home/Newsletter'
+import Footer from '../components/home/Footer.astro'
+---
+
+<Layout>
+  <div class="relative min-h-screen bg-[#0A0E27]">
+    <WaveBackground client:load />
+    <div class="relative z-10">
+      <Navbar client:load />
+      <Hero />
+      <FeaturedInsights />
+      <HowWeHelp />
+      <Careers />
+      <SocietalImpact />
+      <Newsletter client:visible />
+      <Footer />
+    </div>
+  </div>
+</Layout>

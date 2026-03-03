@@ -1,0 +1,22 @@
+---
+const spacings = [
+  { value: 8, label: '8px' },
+  { value: 16, label: '16px' },
+  { value: 24, label: '24px' },
+  { value: 32, label: '32px' },
+  { value: 48, label: '48px' },
+  { value: 64, label: '64px' },
+]
+---
+
+<div class="flex flex-wrap gap-8">
+  {spacings.map(({ value, label }) => (
+    <div class="flex flex-col items-center gap-2">
+      <div
+        class="rounded bg-gradient-to-br from-[#CEEF2C] to-[#D8F847]"
+        style={`width: ${value}px; height: 40px`}
+      ></div>
+      <span class="text-xs text-slate-400">{label}</span>
+    </div>
+  ))}
+</div>

@@ -1,0 +1,58 @@
+---
+const capabilities = [
+  {
+    number: '01',
+    title: 'Automatisation des processus critiques',
+    description: "Nous identifions et automatisons vos processus clés pour les rendre totalement indépendants de l'humain. Zéro goulot d'étranglement, zéro dépendance individuelle : vos opérations tournent à plein régime, en permanence.",
+  },
+  {
+    number: '02',
+    title: 'Restructuration financière',
+    description: "Nous automatisons l'analyse et la restructuration de votre bilan et de votre P&L. Chaque ligne de coût, chaque levier de marge est passé au crible pour maximiser la performance financière réelle.",
+  },
+  {
+    number: '03',
+    title: 'Nouvelles aventures entrepreneuriales',
+    description: "Nous co-construisons avec vous de nouveaux produits et de nouveaux marchés. Des opportunités concrètes, des produits qui créent de la désirabilité, bâtis pour croître vite et fort.",
+  },
+  {
+    number: '04',
+    title: 'Domination stratégique',
+    description: "Nous reconfigurons le jeu en votre faveur : création de fournisseurs exclusifs, expériences clients addictives, positionnement qui rend vos concurrents obsolètes. Vous ne suivez plus le marché — vous le définissez.",
+  },
+  {
+    number: '05',
+    title: 'Changement de business model',
+    description: "C'est l'étape ultime. Changer de modèle économique, c'est là où votre business va vraiment exploser. Nouveaux flux de revenus, nouvelles logiques de valeur — une transformation qui change définitivement votre trajectoire.",
+  },
+]
+---
+
+<section id="capabilities" class="bg-[#0A0E27] px-6 py-20 lg:px-12 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+        Comment nous aidons
+      </h2>
+      <p class="text-lg text-slate-400 leading-relaxed text-pretty">
+        Cinq leviers. Un seul objectif : faire de votre entreprise un leader incontesté.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {capabilities.map((cap, i) => (
+        <div class={`group bg-slate-800/30 border border-slate-700/40 rounded-lg p-8 hover:border-[#CEEF2C]/40 hover:-translate-y-1 transition-all${i === 4 ? ' md:col-span-2 lg:col-span-1' : ''}`}>
+          <span class="text-4xl font-black text-slate-800 group-hover:text-[#CEEF2C]/20 transition-colors select-none leading-none block mb-5">
+            {cap.number}
+          </span>
+          <h3 class="text-xl font-bold text-white mb-3 group-hover:text-[#D8F847] transition-colors">
+            {cap.title}
+          </h3>
+          <p class="text-slate-400 leading-relaxed text-pretty">
+            {cap.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
