@@ -2,11 +2,11 @@
 const columns = [
   {
     heading: 'Entreprise',
-    links: ['À propos', 'Leadership', 'Valeurs', 'Localités'],
+    links: ['À propos', 'Impact sociétal', 'Indépendance technologique'],
   },
   {
     heading: 'Expertise',
-    links: ['Industries', 'Capacités', 'Tech & IA', 'Études de cas'],
+    links: ['Services', 'Insights', 'Techniques secrètes'],
   },
   {
     heading: 'Ressources',
@@ -14,7 +14,7 @@ const columns = [
   },
   {
     heading: 'Connecter',
-    links: ['Carrières', 'Contact', 'LinkedIn'],
+    links: ['Carrières', 'Prendre rendez-vous', 'LinkedIn'],
   },
 ]
 ---
@@ -30,18 +30,27 @@ const columns = [
           <ul class="space-y-2.5">
             {col.links.map((link) => (
               <li>
-                {link === 'Contact' ? (
-                  <a href="/contact" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                {link === 'Prendre rendez-vous' ? (
+                  <a href="/prendre-un-rendez-vous" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">
+                    <span class="block">Découvrons votre</span>
+                    <span class="block">premier projet gratuitement</span>
+                  </a>
                 ) : link === 'LinkedIn' ? (
                   <a href="https://www.linkedin.com/company/steroids-studio" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
                 ) : link === 'Analyses' || link === 'Blog' ? (
                   <a href="/insights" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
                 ) : link === 'À propos' ? (
-                  <a href="/a-propos" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
-                ) : link === 'Leadership' ? (
-                  <a href="/a-propos#leadership" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
-                ) : link === 'Valeurs' ? (
-                  <a href="/a-propos#valeurs" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                  <a href="/about" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Impact sociétal' ? (
+                  <a href="/about#societal-impact" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Indépendance technologique' ? (
+                  <a href="/about#societal-impact" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Services' ? (
+                  <a href="/services" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Insights' ? (
+                  <a href="/insights" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Techniques secrètes' ? (
+                  <a href="/techniques-secretes" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
                 ) : (
                   <a href="#" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
                 )}

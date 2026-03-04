@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Navbar } from '../components/home/Navbar'
+import Footer from '../components/home/Footer.astro'
+import SocietalImpact from '../components/home/SocietalImpact.astro'
+---
+
+<Layout
+  title="À propos | Steroids"
+  description="Découvrez notre mission, nos valeurs et notre approche pour transformer les entreprises."
+>
+  <div class="min-h-screen bg-[#0A0E27]">
+    <Navbar client:load />
+
+    <!-- Hero Section -->
+    <section class="relative py-24 px-6 lg:px-12 border-b border-slate-700/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center">
+          <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+            L'urgence d'agir
+          </p>
+          <h1 class="text-5xl sm:text-6xl font-bold text-white mb-6 tracking-tight text-balance">
+            La vitesse crée la profitabilité et l'impact
+          </h1>
+          <p class="text-lg text-slate-300 max-w-3xl mx-auto">
+            Dans un monde où tout s'accélère, la rapidité d'exécution n'est plus un avantage, c'est une nécessité absolue. Nous aidons les entreprises à agir vite pour toucher le ROI immédiatement, devenir plus profitables et contribuer davantage à leur écosystème.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="py-24 px-6 lg:px-12">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-white mb-6 tracking-tight">
+              Pourquoi la vitesse est cruciale
+            </h2>
+            <p class="text-slate-300 leading-relaxed mb-6">
+              Dans un environnement concurrentiel, chaque jour compte. La rapidité d'exécution permet de toucher le ROI immédiatement, d'augmenter la profitabilité et de libérer des ressources pour contribuer davantage. Plus vous agissez vite, plus vous créez de valeur pour votre entreprise et votre écosystème.
+            </p>
+            <p class="text-slate-300 leading-relaxed font-semibold">
+              La vitesse n'est pas une option, c'est la clé pour devenir plus profitable et avoir un impact significatif.
+            </p>
+          </div>
+          <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-8">
+            <h3 class="text-xl font-bold text-white mb-4">Notre obsession</h3>
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#CEEF2C] flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Exécution ultra-rapide pour un ROI immédiat</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#CEEF2C] flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Augmentation de la profitabilité et des contributions</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#CEEF2C] flex-shrink-0 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <span>Création de valeur pour l'entreprise et son écosystème</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-24 px-6 lg:px-12 bg-slate-800/30 border-t border-slate-700/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl font-bold text-white mb-4 tracking-tight">
+            Nos piliers
+          </h2>
+          <p class="text-slate-300 max-w-2xl mx-auto">
+            Ce qui nous pousse à agir avec une urgence absolue.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-8 text-center">
+            <div class="mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#CEEF2C] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Vitesse extrême</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Chaque seconde compte. Nous exécutons à une vitesse fulgurante pour générer un ROI immédiat et libérer votre potentiel.
+            </p>
+          </div>
+          <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-8 text-center">
+            <div class="mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#CEEF2C] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Profitabilité accrue</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Nous aidons votre entreprise à devenir plus rentable rapidement, libérant ainsi des ressources pour contribuer davantage.
+            </p>
+          </div>
+          <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-8 text-center">
+            <div class="mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#CEEF2C] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Contribution significative</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Nous aidons votre entreprise à avoir un impact positif sur son écosystème tout en augmentant sa rentabilité.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Societal Impact Section -->
+    <SocietalImpact />
+
+    <!-- CTA Section -->
+    <section class="py-16 px-6 lg:px-12 bg-slate-800/30 border-t border-slate-700/50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">Le moment d'agir est maintenant</h2>
+        <p class="text-slate-300 text-lg mb-8">
+          Chaque jour sans action est un jour de profitabilité et de contribution en moins. Prenez les devants pour devenir plus rentable et avoir un impact significatif dès aujourd'hui.
+        </p>
+        <a
+          href="/contact"
+          class="inline-flex bg-[#CEEF2C] text-black font-semibold px-8 py-3.5 rounded hover:shadow-xl hover:shadow-[#CEEF2C]/25 hover:-translate-y-0.5 transition-all"
+        >
+          Agir maintenant
+        </a>
+      </div>
+    </section>
+
+    <Footer />
+  </div>
+</Layout>

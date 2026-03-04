@@ -1,0 +1,77 @@
+---// src/pages/prendre-un-rendez-vous.astro
+import Layout from '../layouts/Layout.astro';
+import { WaveBackground } from '../components/WaveBackground';
+import { Navbar } from '../components/home/Navbar';
+import Footer from '../components/home/Footer.astro';
+
+const title = "Prendre un rendez-vous | Steroids";
+const description = "Prenez un rendez-vous avec notre équipe pour discuter de vos besoins et découvrir comment nous pouvons vous aider.";
+---
+
+<Layout title={title} description={description}>
+  <div class="relative min-h-screen bg-[#0A0E27]">
+    <WaveBackground client:load />
+    <div class="relative z-10">
+      <Navbar client:load />
+      <main class="px-6 py-20 lg:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6">
+            Prendre un rendez-vous
+          </h1>
+          <p class="text-lg text-slate-300 mb-12 max-w-2xl mx-auto">
+            Réservez un créneau pour échanger avec notre équipe et découvrir comment nous pouvons accélérer votre croissance.
+          </p>
+
+          <!-- Process Explanation -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">Notre processus</h2>
+            <div class="space-y-4 text-slate-300">
+              <p>
+                <span class="font-semibold text-[#D8F847]">1. Entretien rapide (offert) :</span> 
+                Nous identifions ensemble votre premier projet découverte. L'objectif est de réaliser un changement concret en moins de 10 jours.
+              </p>
+              <p>
+                <span class="font-semibold text-[#D8F847]">2. Projet découverte (1000€) :</span> 
+                Les 10 premiers jours sont facturés à 1000€. Nous livrons un résultat tangible qui démontre notre valeur.
+              </p>
+              <p>
+                <span class="font-semibold text-[#D8F847]">3. Abonnement (à partir de 5000€/mois) :</span> 
+                Une fois que vous faites partie de notre communauté, nous passons sur un mode abonnement :
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                  <li><span class="font-semibold">5000€/mois</span> : Réalisation tâche par tâche.</li>
+                  <li><span class="font-semibold">10000€/mois</span> : Une équipe complète et une parallélisation des tâches pour une exécution ultra-rapide.</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+
+          <!-- Cal.com Embed -->
+          <div class="bg-slate-800/30 border border-slate-700 rounded-lg p-8 mb-8">
+            <div style="width:100%;height:600px;overflow:scroll" id="my-cal-inline-30min"></div>
+            <script is:inline type="text/javascript">
+              (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+              Cal("init", "30min", {origin:"https://app.cal.com"});
+
+              Cal.ns["30min"]("inline", {
+                elementOrSelector:"#my-cal-inline-30min",
+                config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"},
+                calLink: "oswald-bernard-bjvnde/30min",
+              });
+
+              Cal.ns["30min"]("ui", {"theme":"dark","cssVarsPerTheme":{"light":{"cal-brand":"#0a0f27"},"dark":{"cal-brand":"#ceef2c"}},"hideEventTypeDetails":false,"layout":"month_view"});
+              </script>
+          </div>
+
+          <!-- Alternative Contact Options -->
+          <div class="space-y-4">
+            <p class="text-slate-400">
+              Vous préférez discuter maintenant ? 
+              <a href="#" class="text-[#D8F847] font-semibold hover:underline">Chattez avec nous</a>.
+            </p>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  </div>
+</Layout>

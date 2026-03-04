@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 const navLinks = [
   { label: 'Services', href: '/services' },
-  { label: 'Contact', href: '/contact' },
   { label: 'Analyses', href: '/#insights' },
 ]
 
@@ -34,10 +33,11 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="/contact"
+            href="/prendre-un-rendez-vous"
             className="bg-[#CEEF2C] text-[#0A0E27] text-sm font-semibold px-5 py-2.5 rounded hover:shadow-lg hover:shadow-[#CEEF2C]/25 transition-all"
           >
-            Contact
+            <span className="block">Découvrons votre</span>
+            <span className="block">premier projet gratuitement</span>
           </a>
         </div>
 
@@ -71,11 +71,12 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="/contact"
+            href="/prendre-un-rendez-vous"
             className="block bg-[#CEEF2C] text-[#0A0E27] text-center text-sm font-semibold px-5 py-2.5 rounded"
             onClick={() => setMenuOpen(false)}
           >
-            Contact
+            <span className="block">Découvrons votre</span>
+            <span className="block">premier projet gratuitement</span>
           </a>
         </div>
       )}
