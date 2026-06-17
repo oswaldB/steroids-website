@@ -17,8 +17,8 @@ export function Navbar() {
           <div className="w-8 h-8 rounded bg-[#CEEF2C] flex items-center justify-center">
             <span className="text-sm font-black text-[#0A0E27] leading-none">S</span>
           </div>
-          <span className="text-xl font-bold text-white tracking-tight group-hover:text-[#D8F847] transition-colors">
-            Steroids
+          <span className="text-2xl font-black text-white tracking-tighter group-hover:text-[#D8F847] transition-colors">
+            STEROIDS
           </span>
         </a>
 
