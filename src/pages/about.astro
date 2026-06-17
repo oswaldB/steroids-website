@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro'
 import { Navbar } from '../components/home/Navbar'
 import Footer from '../components/home/Footer.astro'
-import SocietalImpact from '../components/home/SocietalImpact.astro'
 ---
 
 <Layout
@@ -123,8 +122,70 @@ import SocietalImpact from '../components/home/SocietalImpact.astro'
       </div>
     </section>
 
-    <!-- Societal Impact Section -->
-    <SocietalImpact />
+    <!-- Results Section - NOUVEAU -->
+    <section class="py-24 px-6 lg:px-12 border-t border-slate-700/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+            Résultats concrets
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+            Ce qu'on a fait pour nos clients
+          </h2>
+          <p class="text-slate-300 max-w-2xl mx-auto">
+            Des économies réelles. Des croissances mesurables.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "93 600€ d'économies par an",
+              description: "En remplaçant 3 postes par des processus automatisés. ROI en moins de 6 mois.",
+              client: "Entreprise de services",
+              icon: "💰"
+            },
+            {
+              title: "50K€ de CA supplémentaire",
+              description: "Avec le lancement d'un SaaS en 3 mois. Sans embauche.",
+              client: "Startup tech",
+              icon: "📈"
+            },
+            {
+              title: "+30% de chiffre d'affaires",
+              description: "Grâce à une appli mobile qui a fidélisé les clients.",
+              client: "Diagnostic immobilier",
+              icon: "📱"
+            },
+            {
+              title: "40% de missions non rentables identifiées",
+              description: "Et supprimées en 1 semaine grâce à nos tableaux de bord.",
+              client: "Fournisseur HLM",
+              icon: "📊"
+            },
+            {
+              title: "Projet livré en 2 semaines",
+              description: "Au lieu de 3 mois ailleurs. Avec des itérations illimitées.",
+              client: "PME industrielle",
+              icon: "⚡"
+            },
+            {
+              title: "10h gagnées par semaine",
+              description: "Grâce à l'automatisation des tâches administratives.",
+              client: "Boulangerie",
+              icon: "⏰"
+            }
+          ].map((result) => (
+            <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-8 hover:border-[#CEEF2C]/40 transition-all">
+              <div class="text-4xl mb-4">{result.icon}</div>
+              <h3 class="text-xl font-bold text-white mb-3">{result.title}</h3>
+              <p class="text-slate-400 leading-relaxed mb-4">{result.description}</p>
+              <p class="text-sm text-slate-500">Client : {result.client}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <!-- CTA Section -->
     <section class="py-16 px-6 lg:px-12 bg-slate-800/30 border-t border-slate-700/50">
@@ -132,7 +193,7 @@ import SocietalImpact from '../components/home/SocietalImpact.astro'
         <h2 class="text-3xl font-bold text-white mb-6">Prêt à performer ?</h2>
         <p class="text-slate-300 text-lg mb-8">
           On vous aide à réduire vos coûts et à booster votre CA.
-          Sans engagement. Avec des résultats garantis.
+          Sans engagement. Avec une remise de 3 000€ sur le premier projet.
         </p>
         <a
           href="/prendre-un-rendez-vous"
