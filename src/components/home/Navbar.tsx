@@ -37,8 +37,8 @@ export function Navbar() {
             href="/prendre-un-rendez-vous"
             className="bg-[#CEEF2C] text-[#0A0E27] text-sm font-semibold px-5 py-2.5 rounded hover:shadow-lg hover:shadow-[#CEEF2C]/25 transition-all"
           >
-            <span className="block">On en parle ?</span>
-            <span className="block">Remise de 3 000€</span>
+            <span className="block">Atelier découverte</span>
+            <span className="block">3 000€ offerts</span>
           </a>
         </div>
 
@@ -76,8 +76,8 @@ export function Navbar() {
             className="block bg-[#CEEF2C] text-[#0A0E27] text-center text-sm font-semibold px-5 py-2.5 rounded"
             onClick={() => setMenuOpen(false)}
           >
-            <span className="block">On en parle ?</span>
-            <span className="block">Remise de 3 000€</span>
+            <span className="block">Atelier découverte</span>
+            <span className="block">3 000€ offerts</span>
           </a>
         </div>
       )}

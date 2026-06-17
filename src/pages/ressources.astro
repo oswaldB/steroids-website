@@ -83,13 +83,7 @@ import Footer from '../components/home/Footer.astro'
               Apprenez à automatiser comme un pro
             </h2>
             <p class="text-slate-300 leading-relaxed mb-8">
-              Des formations pratiques pour :
-              <ul class="mt-4 space-y-2 text-slate-200">
-                <li>• Choisir les bons outils d'automatisation</li>
-                <li>• Mettre en place des processus sans code</li>
-                <li>• Lancer des projets digitaux rapidement</li>
-                <li>• Mesurer l'impact de vos actions</li>
-              </ul>
+              Des formations pratiques pour apprendre à faire vous-même.
             </p>
             <a
               href="/academie"
@@ -97,6 +91,32 @@ import Footer from '../components/home/Footer.astro'
             >
               Découvrir l'Académie
             </a>
+            
+            <!-- Exemples concrets -->
+            <div class="mt-12">
+              <h3 class="text-lg font-bold text-white mb-6">Exemples de ce que vous allez apprendre :</h3>
+              <div class="space-y-4">
+                {[
+                  {
+                    title: "Automatiser ses relances automatiques",
+                    description: "Mettre en place un système de relances emails/SMS pour ne plus perdre de clients."
+                  },
+                  {
+                    title: "Créer un petit site e-commerce",
+                    description: "Lancer un site avec 2-3 produits en quelques heures, sans compétences techniques."
+                  },
+                  {
+                    title: "Mettre en place un blog et une stratégie SEO",
+                    description: "Attirer du trafic qualifié avec du contenu optimisé."
+                  }
+                ].map((example) => (
+                  <div class="bg-slate-700/30 border border-slate-600/40 rounded-lg p-4">
+                    <h4 class="text-white font-semibold mb-2">{example.title}</h4>
+                    <p class="text-sm text-slate-400">{example.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
           <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
             <img
@@ -116,7 +136,7 @@ import Footer from '../components/home/Footer.astro'
         <h2 class="text-3xl font-bold text-white mb-6">Besoin d'aide pour choisir ?</h2>
         <p class="text-slate-300 text-lg mb-8">
           On vous aide à identifier les meilleures opportunités pour votre PME.
-          Sans engagement. Avec une remise de 3 000€ sur le premier projet.
+          Premier atelier découverte : 3 000€ offerts.
         </p>
         <a
           href="/prendre-un-rendez-vous"
