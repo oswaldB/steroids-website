@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 const navLinks = [
   { label: 'Services', href: '/services' },
+  { label: 'Ressources', href: '/ressources' },
   { label: 'Analyses', href: '/#insights' },
 ]
 
@@ -36,8 +37,8 @@ export function Navbar() {
             href="/prendre-un-rendez-vous"
             className="bg-[#CEEF2C] text-[#0A0E27] text-sm font-semibold px-5 py-2.5 rounded hover:shadow-lg hover:shadow-[#CEEF2C]/25 transition-all"
           >
-            <span className="block">Découvrons votre</span>
-            <span className="block">premier projet gratuitement</span>
+            <span className="block">On en parle ?</span>
+            <span className="block">1er projet offert</span>
           </a>
         </div>
 
@@ -75,8 +76,8 @@ export function Navbar() {
             className="block bg-[#CEEF2C] text-[#0A0E27] text-center text-sm font-semibold px-5 py-2.5 rounded"
             onClick={() => setMenuOpen(false)}
           >
-            <span className="block">Découvrons votre</span>
-            <span className="block">premier projet gratuitement</span>
+            <span className="block">On en parle ?</span>
+            <span className="block">1er projet offert</span>
           </a>
         </div>
       )}

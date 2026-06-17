@@ -1,0 +1,389 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Navbar } from '../components/home/Navbar'
+import Footer from '../components/home/Footer.astro'
+---
+
+<Layout
+  title="Steroids Academy | Apprenez à automatiser"
+  description="Formez-vous au digital et à l'automatisation avec nos programmes pratiques. Pour les entrepreneurs qui veulent agir eux-mêmes."
+>
+  <div class="min-h-screen bg-[#0A0E27]">
+    <Navbar client:load />
+
+    <!-- Hero Section -->
+    <section class="relative py-24 px-6 lg:px-12 border-b border-slate-700/50 overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+              Steroids Academy
+            </p>
+            <h1 class="text-5xl sm:text-6xl font-bold text-white mb-6 tracking-tight text-balance">
+              Apprenez à <span class="text-[#CEEF2C]">automatiser</span> 
+              comme un pro
+            </h1>
+            <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+              Des formations pratiques pour maîtriser le digital et l'automatisation.
+              Sans jargon. Sans théorie inutile. Juste ce qui marche.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="/prendre-un-rendez-vous"
+                class="bg-[#CEEF2C] text-black font-semibold px-8 py-3.5 rounded hover:shadow-xl hover:shadow-[#CEEF2C]/25 hover:-translate-y-0.5 transition-all"
+              >
+                On en parle ?
+              </a>
+              <a
+                href="#programmes"
+                class="border border-slate-600 text-white font-semibold px-8 py-3.5 rounded hover:bg-slate-800 transition-all"
+              >
+                Voir les programmes
+              </a>
+            </div>
+          </div>
+          <div class="relative bg-slate-700 rounded-lg aspect-[4/3] lg:aspect-auto lg:h-96">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <svg class="w-20 h-20 text-[#CEEF2C] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <p class="text-white font-semibold">Formation en ligne</p>
+                <p class="text-slate-400 text-sm">Apprenez à votre rythme</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pourquoi Section -->
+    <section class="py-20 px-6 lg:px-12">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-white mb-6 tracking-tight">
+              Pourquoi apprendre avec nous ?
+            </h2>
+            <p class="text-slate-300 leading-relaxed mb-8">
+              On ne vous apprendra pas la théorie. On vous montrera <span class="text-[#CEEF2C] font-semibold">comment faire</span>.
+              Avec des cas concrets, des outils testés, et des méthodes qui marchent.
+            </p>
+          </div>
+          <div class="space-y-6">
+            <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-6">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-[#CEEF2C]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-[#CEEF2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-white mb-2">Des formations 100% pratiques</h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Pas de blabla. Juste des étapes claires pour passer à l'action.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-6">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-[#CEEF2C]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-[#CEEF2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-white mb-2">À votre rythme</h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Accédez aux cours quand vous voulez. Où vous voulez.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-6">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-[#CEEF2C]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-[#CEEF2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold text-white mb-2">Sécurisé et confidentiel</h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Vos données restent à vous. On ne partage rien.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programmes Section -->
+    <section id="programmes" class="py-20 px-6 lg:px-12 bg-slate-800/30 border-t border-slate-700/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+            Nos programmes
+          </p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+            Choisissez votre parcours
+          </h2>
+          <p class="text-slate-300 max-w-2xl mx-auto">
+            Des formations adaptées à votre niveau et à vos objectifs.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Débutant : Les bases de l'automatisation",
+              description: "Découvrez comment automatiser vos premières tâches sans code.",
+              duration: "4 heures",
+              level: "Débutant",
+              price: "Gratuit",
+              features: [
+                "Introduction aux outils no-code",
+                "Automatiser des tâches répétitives",
+                "Cas pratiques pour PME",
+                "Accès à la communauté"
+              ],
+              cta: "Commencer gratuitement"
+            },
+            {
+              title: "Intermédiaire : Optimisation des processus",
+              description: "Allez plus loin avec des automatisations avancées.",
+              duration: "12 heures",
+              level: "Intermédiaire",
+              price: "297€",
+              features: [
+                "Intégration d'outils multiples",
+                "Création de workflows complexes",
+                "Tableaux de bord personnalisés",
+                "Support prioritaire"
+              ],
+              cta: "S'inscrire maintenant",
+              highlighted: true
+            },
+            {
+              title: "Avancé : Stratégie digitale complète",
+              description: "Maîtrisez tous les aspects du digital pour votre PME.",
+              duration: "24 heures",
+              level: "Avancé",
+              price: "597€",
+              features: [
+                "Stratégie d'automatisation globale",
+                "Lancement de services digitaux",
+                "Analyse de performance",
+                "Coaching personnalisé"
+              ],
+              cta: "Devenir expert"
+            }
+          ].map((program, index) => (
+            <div class={`bg-slate-800/30 border border-slate-700/40 rounded-lg p-8 hover:border-[#CEEF2C]/40 transition-all ${program.highlighted ? 'border-[#CEEF2C]/50' : ''}`}>
+              <div class="mb-4">
+                <span class="text-xs font-semibold uppercase tracking-widest text-[#D8F847] bg-[#CEEF2C]/10 px-3 py-1 rounded">
+                  {program.level}
+                </span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">
+                {program.title}
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                {program.description}
+              </p>
+              <div class="space-y-3 mb-6 pb-6 border-b border-slate-700/40">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span class="text-sm text-slate-300">{program.duration}</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span class="text-sm text-slate-300">{program.price}</span>
+                </div>
+              </div>
+              <ul class="space-y-2 mb-6">
+                {program.features.map((feature) => (
+                  <li class="flex items-center gap-3 text-sm text-slate-300">
+                    <svg class="w-4 h-4 text-[#CEEF2C] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="/prendre-un-rendez-vous"
+                class={`block w-full text-center font-semibold py-3 px-6 rounded transition-all ${program.highlighted ? 'bg-[#CEEF2C] text-black hover:bg-[#D8F847]' : 'border border-slate-600 text-white hover:bg-slate-700'}`}
+              >
+                {program.cta}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Témoignages Section -->
+    <section class="py-20 px-6 lg:px-12 border-t border-slate-700/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+          <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+            Ils l'ont fait
+          </p>
+          <h2 class="text-3xl font-bold text-white tracking-tight mb-4">
+            Ce que disent nos élèves
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              quote: "Grâce à cette formation, j'ai automatisé 80% de mes tâches administratives. Je gagne 10h par semaine !",
+              name: "Marie D.",
+              role: "Dirigeante de PME",
+              company: "Boulangerie Martin"
+            },
+            {
+              quote: "Je pensais que l'automatisation, c'était pour les grandes entreprises. J'avais tort. Maintenant, je lance mon premier SaaS.",
+              name: "Thomas L.",
+              role: "Entrepreneur",
+              company: "TechSolutions"
+            },
+            {
+              quote: "Les formations sont ultra-pratiques. Pas de théorie inutile. Juste ce qu'il faut pour agir.",
+              name: "Sophie R.",
+              role: "Responsable Marketing",
+              company: "EcoProducts"
+            }
+          ].map((testimonial) => (
+            <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-6">
+              <div class="mb-4">
+                <svg class="w-8 h-8 text-[#CEEF2C]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <p class="text-slate-300 leading-relaxed mb-6 italic">
+                "{testimonial.quote}"
+              </p>
+              <div>
+                <p class="text-white font-semibold">{testimonial.name}</p>
+                <p class="text-sm text-slate-400">{testimonial.role} - {testimonial.company}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6 lg:px-12 bg-slate-800/30 border-t border-slate-700/50">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14">
+          <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+            Questions fréquentes
+          </p>
+          <h2 class="text-3xl font-bold text-white tracking-tight mb-4">
+            Vous vous posez des questions ?
+          </h2>
+          <p class="text-slate-300">
+            On a les réponses.
+          </p>
+        </div>
+
+        <div class="space-y-6">
+          {[
+            {
+              question: "Est-ce que je peux vraiment apprendre sans expérience technique ?",
+              answer: "Absolument. Nos formations sont conçues pour les débutants. On part de zéro et on vous guide étape par étape. Pas besoin de savoir coder."
+            },
+            {
+              question: "Combien de temps par semaine dois-je consacrer ?",
+              answer: "C'est vous qui choisissez. Nos formations sont disponibles 24/7. Vous pouvez apprendre à votre rythme, que ce soit 1h ou 10h par semaine."
+            },
+            {
+              question: "Vais-je avoir un certificat à la fin ?",
+              answer: "Oui, à la fin de chaque programme, vous recevrez un certificat de completion que vous pourrez partager sur LinkedIn ou votre site web."
+            },
+            {
+              question: "Et si je bloque sur un exercice ?",
+              answer: "Pas de problème. Vous avez accès à notre communauté privée et à notre équipe de support pour vous aider à résoudre vos blocages."
+            }
+          ].map((faq, index) => (
+            <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg">
+              <button
+                class={`w-full flex items-center justify-between p-6 text-left ${index !== 0 ? 'border-t border-slate-700/40' : ''}`}
+                onclick="this.nextElementSibling.classList.toggle('hidden')"
+              >
+                <span class="text-lg font-semibold text-white">{faq.question}</span>
+                <svg class="w-5 h-5 text-[#CEEF2C] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-6 pb-6">
+                <p class="text-slate-300 leading-relaxed">{faq.answer}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 px-6 lg:px-12 border-t border-slate-700/50">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+          Prêt à commencer ?
+        </p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">
+          Rejoignez des centaines d'entrepreneurs 
+          qui ont déjà boosté leur business
+        </h2>
+        <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">
+          Choisissez votre programme et commencez dès aujourd'hui.
+          Sans risque. Avec des résultats garantis.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/prendre-un-rendez-vous"
+            class="bg-[#CEEF2C] text-black font-bold py-3 px-8 rounded-lg hover:bg-[#D8F847] transition-colors inline-flex items-center gap-2 justify-center"
+          >
+            On en parle ?
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a
+            href="#programmes"
+            class="border border-slate-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-slate-800 transition-colors"
+          >
+            Voir les programmes
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </div>
+</Layout>
+
+<script>
+  // Simple FAQ toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqButtons = document.querySelectorAll('button[onclick*="nextElementSibling"]');
+    faqButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('svg');
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+  });
+</script>
