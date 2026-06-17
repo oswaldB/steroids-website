@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { Navbar } from '../components/home/Navbar'
+import Footer from '../components/home/Footer.astro'
+---
+
+<Layout
+  title="Ressources Gratuites | Steroids"
+  description="Outils d'aide à la décision et formations pour automatiser et performer."
+>
+  <div class="min-h-screen bg-[#0A0E27]">
+    <Navbar client:load />
+
+    <!-- Hero -->
+    <section class="py-20 px-6 sm:px-12 md:px-16 border-b border-slate-700/50">
+      <div class="max-w-7xl mx-auto text-center">
+        <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+          Gratuit. Actionnable. Immédiat.
+        </p>
+        <h1 class="text-5xl sm:text-6xl font-bold text-white tracking-tight mb-6 text-balance">
+          Des outils pour agir <span class="text-[#CEEF2C]">sans nous</span>
+        </h1>
+        <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          On a créé des outils simples pour vous aider à choisir les bonnes automatisations.
+          Et une Académie pour apprendre à les mettre en place vous-même.
+        </p>
+      </div>
+    </section>
+
+    <!-- Outils Section -->
+    <section class="py-20 px-6 sm:px-12 md:px-16">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-4 text-center">Nos outils gratuits</h2>
+        <p class="text-slate-300 text-center mb-12 max-w-2xl mx-auto">
+          Des calculateurs et guides pour prendre les bonnes décisions.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Calculateur d'économies",
+              description: "Combien pourriez-vous économiser en automatisant vos processus ?",
+              href: "/outils/calculateur-economies",
+            },
+            {
+              title: "Quel processus automatiser ?",
+              description: "Un guide pour identifier les tâches à automatiser en priorité.",
+              href: "/outils/quel-processus",
+            },
+            {
+              title: "ROI des automatisations",
+              description: "Calculez le retour sur investissement de vos projets digitaux.",
+              href: "/outils/roi-automatisation",
+            },
+          ].map((tool) => (
+            <a
+              href={tool.href}
+              class="group bg-slate-800/30 border border-slate-700/40 rounded-lg p-8 hover:border-[#CEEF2C]/40 transition-all"
+            >
+              <h3 class="text-xl font-bold text-white mb-3 group-hover:text-[#D8F847] transition-colors">
+                {tool.title}
+              </h3>
+              <p class="text-slate-400 leading-relaxed">
+                {tool.description}
+              </p>
+              <div class="mt-4 text-[#CEEF2C] font-semibold text-sm">
+                Accéder à l'outil →
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Académie Section -->
+    <section class="py-20 px-6 sm:px-12 md:px-16 bg-slate-800/30 border-t border-slate-700/50">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
+              Steroids Academy
+            </p>
+            <h2 class="text-3xl font-bold text-white tracking-tight mb-6">
+              Apprenez à automatiser comme un pro
+            </h2>
+            <p class="text-slate-300 leading-relaxed mb-8">
+              Des formations pratiques pour :
+              <ul class="mt-4 space-y-2 text-slate-200">
+                <li>• Choisir les bons outils d'automatisation</li>
+                <li>• Mettre en place des processus sans code</li>
+                <li>• Lancer des projets digitaux rapidement</li>
+                <li>• Mesurer l'impact de vos actions</li>
+              </ul>
+            </p>
+            <a
+              href="/academie"
+              class="inline-flex bg-[#CEEF2C] text-black font-semibold px-8 py-3.5 rounded hover:shadow-xl hover:shadow-[#CEEF2C]/25 hover:-translate-y-0.5 transition-all"
+            >
+              Découvrir l'Académie
+            </a>
+          </div>
+          <div class="relative bg-slate-700 rounded-lg aspect-[4/3]">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg class="w-16 h-16 text-[#CEEF2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-6 sm:px-12 md:px-16 border-t border-slate-700/50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-white mb-6">Besoin d'aide pour choisir ?</h2>
+        <p class="text-slate-300 text-lg mb-8">
+          On vous aide à identifier les meilleures opportunités pour votre PME.
+          Sans engagement. Avec des résultats concrets.
+        </p>
+        <a
+          href="/prendre-un-rendez-vous"
+          class="inline-flex bg-[#CEEF2C] text-black font-semibold px-8 py-3.5 rounded hover:shadow-xl hover:shadow-[#CEEF2C]/25 hover:-translate-y-0.5 transition-all"
+        >
+          On en parle ?
+        </a>
+      </div>
+    </section>
+
+    <Footer />
+  </div>
+</Layout>

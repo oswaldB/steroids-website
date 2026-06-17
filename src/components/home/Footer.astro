@@ -10,7 +10,7 @@ const columns = [
   },
   {
     heading: 'Ressources',
-    links: ['Analyses', 'Blog'],
+    links: ['Outils gratuits', 'Académie', 'Blog'],
   },
   {
     heading: 'Connecter',
@@ -32,12 +32,16 @@ const columns = [
               <li>
                 {link === 'Prendre rendez-vous' ? (
                   <a href="/prendre-un-rendez-vous" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">
-                    <span class="block">Découvrons votre</span>
-                    <span class="block">premier projet gratuitement</span>
+                    <span class="block">On en parle ?</span>
+                    <span class="block">1er projet offert</span>
                   </a>
                 ) : link === 'LinkedIn' ? (
                   <a href="https://www.linkedin.com/company/steroids-studio" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
-                ) : link === 'Analyses' || link === 'Blog' ? (
+                ) : link === 'Outils gratuits' ? (
+                  <a href="/ressources" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Académie' ? (
+                  <a href="/academie" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
+                ) : link === 'Blog' ? (
                   <a href="/insights" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
                 ) : link === 'À propos' ? (
                   <a href="/about" class="text-sm text-slate-500 hover:text-[#D8F847] transition-colors">{link}</a>
