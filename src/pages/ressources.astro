@@ -98,12 +98,13 @@ import Footer from '../components/home/Footer.astro'
               Découvrir l'Académie
             </a>
           </div>
-          <div class="relative bg-slate-700 rounded-lg aspect-[4/3]">
-            <div class="absolute inset-0 flex items-center justify-center">
-              <svg class="w-16 h-16 text-[#CEEF2C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-            </div>
+          <div class="relative aspect-[4/3] overflow-hidden rounded-lg">
+            <img
+              src="/images/insight-podcast.jpg"
+              alt="Formation Steroids Academy"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0E27] to-transparent"></div>
           </div>
         </div>
       </div>
@@ -115,7 +116,7 @@ import Footer from '../components/home/Footer.astro'
         <h2 class="text-3xl font-bold text-white mb-6">Besoin d'aide pour choisir ?</h2>
         <p class="text-slate-300 text-lg mb-8">
           On vous aide à identifier les meilleures opportunités pour votre PME.
-          Sans engagement. Avec des résultats concrets.
+          Sans engagement. Avec une remise de 3 000€ sur le premier projet.
         </p>
         <a
           href="/prendre-un-rendez-vous"
