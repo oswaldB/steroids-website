@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro'
 import { WaveBackground } from '../components/WaveBackground'
 import { Navbar } from '../components/home/Navbar'
 import Hero from '../components/home/Hero.astro'
+import ProblemsSection from '../components/home/ProblemsSection.astro'
 import WhySpeedMatters from '../components/home/WhySpeedMatters.astro'
 import FeaturedInsights from '../components/home/FeaturedInsights.astro'
 import HowWeHelp from '../components/home/HowWeHelp.astro'
@@ -18,6 +19,7 @@ import Footer from '../components/home/Footer.astro'
     <div class="relative z-10">
       <Navbar client:load />
       <Hero />
+      <ProblemsSection />
       <WhySpeedMatters />
       <FeaturedInsights />
       <HowWeHelp />
