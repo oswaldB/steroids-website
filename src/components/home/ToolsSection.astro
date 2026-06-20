@@ -1,0 +1,59 @@
+---
+---
+
+<section class="py-20 px-6 lg:px-12 border-t border-slate-700/50">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+        Des outils concrets pour agir dès aujourd'hui
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          icon: "🧮",
+          title: "ByeBye Calculator",
+          description: "Calculez vos économies potentielles en automatisant vos processus.",
+          href: "/outils/byebye-calculator"
+        },
+        {
+          icon: "✍️",
+          title: "Générateur de titres de blog",
+          description: "Créez des titres accrocheurs pour vos articles en quelques clics.",
+          href: "/outils/generateur-titres"
+        },
+        {
+          icon: "📅",
+          title: "Almanach pour réussir sur les réseaux sociaux",
+          description: "Le guide ultime pour optimiser votre présence en ligne.",
+          href: "/outils/almanach-reseaux"
+        },
+        {
+          icon: "🤖",
+          title: "CRMito",
+          description: "Un CRM simple et efficace pour gérer vos relations clients.",
+          href: "/outils/crmito"
+        },
+        {
+          icon: "📧",
+          title: "Carl Relance",
+          description: "Automatisez vos campagnes de relance clients.",
+          href: "/outils/carl-relance"
+        }
+      ].map((tool) => (
+        <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-6 hover:border-[#CEEF2C]/40 transition-all">
+          <div class="text-4xl mb-4">{tool.icon}</div>
+          <h3 class="text-lg font-bold text-white mb-3">{tool.title}</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">{tool.description}</p>
+          <a
+            href={tool.href}
+            class="text-[#CEEF2C] font-semibold text-sm hover:text-[#D8F847] transition-colors inline-flex items-center gap-1"
+          >
+            Essayer →
+          </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
