@@ -5,13 +5,13 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-14">
       <p class="text-[#D8F847] font-semibold text-sm uppercase tracking-widest mb-4">
-        Vous reconnaissez-vous ?
+        🎯 LES 4 PROBLÈMES DES PMES (INTÉRÊT)
       </p>
       <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
-        Les 4 problèmes qui tuent votre PME
+        Votre PME souffre probablement de l'un de ces 4 problèmes
       </h2>
-      <p class="text-slate-300 max-w-2xl mx-auto">
-        Et comment on les résout pour de bon.
+      <p class="text-[#CEEF2C] font-semibold text-lg">
+        Notre solution : des systèmes autonomes + des revenus supplémentaires
       </p>
     </div>
 
@@ -19,36 +19,40 @@
       {[
         {
           icon: "😫",
-          title: "Collaborateurs pas assez à jour",
-          description: "Vos équipes passent trop de temps sur des tâches répétitives au lieu de créer de la valeur.",
-          impact: "Perte de productivité et d'innovation"
+          title: "Collaborateurs pas à jour",
+          description: "Vos équipes passent trop de temps sur des tâches répétitives au lieu de créer de la valeur."
         },
         {
           icon: "🔗",
           title: "Trop dépendants des collaborateurs",
-          description: "Votre PME dépend d'une ou deux personnes clés. Un absence, et tout s'arrête. Exemple : un collaborateur malade = processus de paiement bloqué.",
-          impact: "Risque opérationnel et perte de revenus"
+          description: "Votre PME dépend d'une ou deux personnes clés. Un absence, et tout s'arrête. Exemple : un collaborateur malade = processus de paiement bloqué."
         },
         {
           icon: "💰",
-          title: "Besoin de plus de revenus",
-          description: "Votre CA stagne alors que vos concurrents grandissent. Vous ratez des opportunités.",
-          impact: "Stagnation et perte de parts de marché"
+          title: "Besoin de + Revenus",
+          description: "Votre CA stagne alors que vos concurrents grandissent. Vous ratez des opportunités."
         },
         {
           icon: "📉",
-          title: "Besoin de plus de profit",
-          description: "Vos marges fondent à cause des coûts cachés et du manque d'efficacité.",
-          impact: "Difficultés à investir et grandir"
+          title: "Besoin de + Profit",
+          description: "Vos marges fondent à cause des coûts cachés et du manque d'efficacité."
         }
       ].map((problem) => (
         <div class="bg-slate-800/30 border border-slate-700/40 rounded-lg p-6 hover:border-[#CEEF2C]/40 transition-all">
           <div class="text-4xl mb-4">{problem.icon}</div>
           <h3 class="text-lg font-bold text-white mb-3">{problem.title}</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-3">{problem.description}</p>
-          <p class="text-[#D8F847] text-xs font-semibold">→ {problem.impact}</p>
+          <p class="text-slate-400 text-sm leading-relaxed">{problem.description}</p>
         </div>
       ))}
+    </div>
+    
+    <div class="mt-12 text-center">
+      <a
+        href="/jeu"
+        class="inline-flex bg-[#CEEF2C] text-black font-bold py-3 px-8 rounded-lg hover:shadow-xl hover:shadow-[#CEEF2C]/25 hover:-translate-y-0.5 transition-all"
+      >
+        🎮 JOUER À AMÉLIORER VOTRE PME GRATUITEMENT
+      </a>
     </div>
   </div>
 </section>
